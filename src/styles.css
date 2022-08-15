@@ -72,8 +72,11 @@ h4{
    text-align: center;
    padding: 10px;
 }
-
-a{
+.github{
+   text-align: center;
+   margin-bottom: 20px;
+}
+.openButton{
    background-color: cadetblue;
    color: #fff;
    padding: 5px 10px;

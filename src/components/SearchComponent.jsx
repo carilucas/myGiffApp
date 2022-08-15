@@ -16,6 +16,8 @@ export const SearchComponent = ({onChangeCategory}) => {
    }
 
   return (
+   <>
+   <p className="github">Github repository <a href="https://github.com/carilucas/myGiffApp" target="_blank" rel="noopener noreferrer">here</a></p>
    <form onSubmit={ handleSubmit }>
       <input 
          type="text" 
@@ -26,5 +28,6 @@ export const SearchComponent = ({onChangeCategory}) => {
          placeholder="Search a gif"
       />
    </form>
+   </>
   )
 }

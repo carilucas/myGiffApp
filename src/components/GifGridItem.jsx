@@ -15,7 +15,7 @@ export const GifGridItem = ({title, id, img}) => {
     <div className="gridItem">
       <img src={ img } alt={ title } />
       <h4>{newTitle}</h4>
-      <a href={img} target="_blank" rel="noopener noreferrer">Open Gif</a>
+      <a className="openButton" href={img} target="_blank" rel="noopener noreferrer">Open Gif</a>
     </div>
   )
 }
