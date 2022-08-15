@@ -1,6 +1,6 @@
 # APP TO FETCH GIFS
 
-This is a repo to fetch gifs from giphy.com, created with VITE.
+This is a repo to fetch gifs from giphy.com, created with VITE - REACT.
 
 It uses hooks:
    useState
