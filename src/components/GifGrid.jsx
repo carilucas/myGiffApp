@@ -2,6 +2,7 @@
 import { fetchGifs } from '../helpers/fetchGifs';
 import { useFetch } from '../hooks/useFetch';
 import { GifGridItem } from './GifGridItem';
+import PropTypes from 'prop-types';
 
 export const GifGrid = ( {category} ) => {
 
@@ -9,11 +10,10 @@ export const GifGrid = ( {category} ) => {
    
    return (
       <>
+      <h2>{category.toUpperCase()}</h2>
       {
-         loading
-         && <h1>LOADING.....</h1>
+         loading && (<h1>......................LOADING...................</h1>)
       }
-         <h2>{category.toUpperCase()}</h2>
          <div className='grid'>
             {
                gifs.map( gif=> (
@@ -23,4 +23,8 @@ export const GifGrid = ( {category} ) => {
          </div>
       </>
   )
+}
+
+GifGrid.propTypes = {
+   category: PropTypes.string.isRequired
 }

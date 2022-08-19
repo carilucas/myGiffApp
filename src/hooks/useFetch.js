@@ -9,12 +9,12 @@ export const useFetch = (category) => {
 
    const getGifs = async()=>{
       setGifs( await fetchGifs( category ) );
+      setLoading(false);
    }
    
    useEffect(() => {
    
       getGifs();
-      setLoading(false);
      
    }, []);
 

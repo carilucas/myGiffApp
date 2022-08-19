@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGridItem> Debe mostrar el snapshot 1`] = `
+<div>
+  <div
+    class="gridItem"
+  >
+    <img
+      alt="titulo"
+      src="https://urldeimagen.com/"
+    />
+    <h4>
+      titulo
+    </h4>
+    <a
+      class="openButton"
+      href="https://urldeimagen.com/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Open Gif
+    </a>
+  </div>
+</div>
+`;

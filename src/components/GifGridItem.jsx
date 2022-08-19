@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import PropTypes from 'prop-types';
+
 
 
 export const GifGridItem = ({title, id, img}) => {
@@ -18,4 +19,9 @@ export const GifGridItem = ({title, id, img}) => {
       <a className="openButton" href={img} target="_blank" rel="noopener noreferrer">Open Gif</a>
     </div>
   )
+}
+
+GifGridItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
 }
